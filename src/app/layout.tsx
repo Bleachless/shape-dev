@@ -7,7 +7,8 @@ const grotesk = Space_Grotesk({ variable: "--font-grotesk", subsets: ["latin"] }
 const silk = Silkscreen({ variable: "--font-silk", weight: ["400", "700"], subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000"),
+  // Sem a variável, o Next usa o endereço de produção da Vercel (VERCEL_PROJECT_PRODUCTION_URL).
+  metadataBase: process.env.NEXT_PUBLIC_SITE_URL ? new URL(process.env.NEXT_PUBLIC_SITE_URL) : undefined,
   title: "Shape Dev · seu ano no GitHub como se fosse um treino",
   description: "Quanto código você levantou esse ano? Digite seu usuário do GitHub e veja seu shape de dev: carga, frequência, grupos musculares e nível.",
 };

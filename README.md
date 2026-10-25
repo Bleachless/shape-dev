@@ -4,6 +4,8 @@
 
 <br />
 
+[![Abrir o app](https://img.shields.io/badge/%E2%96%B6_Abrir_o_app-shape--dev--psi.vercel.app-f3c13a?style=for-the-badge)](https://shape-dev-psi.vercel.app)
+
 [![CI](https://github.com/Bleachless/shape-dev/actions/workflows/ci.yml/badge.svg)](https://github.com/Bleachless/shape-dev/actions/workflows/ci.yml)
 ![Next.js](https://img.shields.io/badge/Next.js_16-0d0e0c?style=flat-square&logo=nextdotjs&logoColor=white)
 ![React](https://img.shields.io/badge/React_19-0d0e0c?style=flat-square&logo=react&logoColor=61dafb)
@@ -94,8 +96,8 @@ Na Vercel: **Add New → Project**, importe o repositório e faça o deploy. Dep
 
 | Variável | Para quê |
 | --- | --- |
-| `NEXT_PUBLIC_SITE_URL` | O endereço do site (ex.: `https://shapedev.vercel.app`), usado nas imagens de prévia |
-| `GITHUB_TOKEN` | Opcional, aumenta o limite da API para 5.000 consultas por hora |
+| `NEXT_PUBLIC_SITE_URL` | Opcional, o endereço do site para as imagens de prévia. Sem ela, vale o endereço de produção da Vercel |
+| `GITHUB_TOKEN` | Recomendado: aumenta o limite da API de 60 para 5.000 consultas por hora |
 
 ---
 
